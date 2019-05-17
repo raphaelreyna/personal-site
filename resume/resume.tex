@@ -1,0 +1,94 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res}
+\usepackage{multicol}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
+\name{Raphael Reyna}
+
+\address{ raphaelreyna@protonmail.com \\
+  (626) 384-1342 }
+                           
+                        
+\begin{resume}
+\section{EDUCATION}
+Cal Poly Pomona, Pomona, CA \\
+B.S. Applied Mathematics and Statistics with a minor in Physics, 2015 \newline
+M.S. Pure Mathematics, expected summer 2019
+ 
+\section{PROJECTS}
+  
+\normalsize{\section{Subseries Web App}}
+A client side web app to assist in
+research in number theory (written as a part of my Master's thesis on subseries
+of holomorphic functions). Constructs, evaluates and plots millions of complex
+valued functions in parallel. Utilized WebGL for general computing on the GPU.
+Utilized HTML5's {\it canvas} to create dynamic controls.
+\begin{itemize}
+\item {\bf Languages Used: } HTML, Javascript, CSS
+\item {\bf Platforms/Frameworks Used: } WebGL, HTML canvas API, Math.js
+\end{itemize}
+
+\normalsize{\section{BBMail}} Server application that enables teachers to use
+the Blackboard learning management system via email, avoiding the web interface.
+Works by monitoring email accounts, acting only on emails from the user.
+Interfaces with Blackboard's website using selenium to drive a headless Chrome
+browser.
+\begin{itemize}
+\item {\bf Languages Used: } Python
+\item {\bf Libraries/Frameworks Used: } Selenium, Beautiful Soup 4, Python
+  Standard Library
+\end{itemize}
+
+\normalsize{\section{Wine Quality}}
+A report on the analysis of various machine learning models to determine wine
+quality based on physical data.
+Involved designing and fitting various statistical models to wine data, and
+evaluating their performance in predicting wine quality.
+\begin{itemize}
+\item {\bf Languages Used: } R, LaTeX
+\item {\bf Technologies Used: } RStudio
+\end{itemize}
+
+\normalsize{\section{TinyTerm}} A macOS app; a small terminal emulator that
+lives in the menu bar. Uses the Darwin libraries to open a pseudo-terminal
+device file to maintain an interactive shell session going.
+\begin{itemize}
+\item {\bf Languages Used: } Swift 4
+\item {\bf Frameworks Used: } Darwin, Foundation, Cocoa
+\end{itemize}
+
+\section{RELEVANT EXPERIENCE}
+{\bf Cal Poly Pomona, Pomona, CA}\newline
+{\it Mathematics Instructor}\newline
+{\bf 2015 - Present}\newline
+Responsibilities included designing a course schedule, complete with lecture and
+evaluation material; as well as leading the class through the material and
+regularly conducting evaluations of student performance.\newline
+Courses taught:
+\begin{multicols}{2}
+\begin{itemize}
+\item Calculus I {\it and} Calculus II
+\item Trigonometry
+  \columnbreak
+\item College Algebra
+\item Remedial Mathematics
+\end{itemize}
+\end{multicols}
+
+  \section{RELEVANT SKILLS}
+  Linux, BSD, *Nix, macOS, Bash, Git/Github, Version Control, PyPi, Pip, Continuous Integration,
+  Full Stack Development, Data Science, Machine Learning Algorithms, Time Series, Forecasting,
+  GPGPU, OpenCL, OpenGL, C, C++, Make, GCC, clang, GDB, LLDB, XCode, Carthage,
+  CocoaPods, NPM, Mathematica, R/RStudio, Emacs, Nginx, Gunicorn, Flask, REST API, Arduino, PID control
+
+  \section{OTHER}
+  Spanish, Italian, Portuguese, 3D Printing, CAD, 3D Modeling, Circuit Design,
+  Hardware Design, Soldering 
+ 
+\end{resume}
+\end{document}

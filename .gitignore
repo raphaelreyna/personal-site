@@ -1,0 +1,4 @@
+*.synctex.gz
+*.log
+*.DS_Store
+*/auto/
