@@ -1,19 +1,26 @@
 header, main, footer {
-    padding-left: 170px;
+    padding-left: 190px;
 }
 
 .sidenav {
-    width: 170px;
+    width: 190px;
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 800px) {
     header, main, footer {
         padding-left: 0;
     }
 }
 
+.padded {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
-#resumePDF {
-    width: 600px;
-    height: 800px;
+#homeLink:link {
+    color: white;
+}
+
+#homeLink:visited {
+    color: white;
 }
