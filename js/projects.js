@@ -12,11 +12,13 @@ function handleScroll() {
         }
     }
     activeList.classList.remove("active");
-    activeList.classList.remove("cyan");
-    activeList.classList.remove("lighten-3");
+    activeList.classList.remove("teal");
+    activeList.classList.remove("lighten-2");
+    activeList.classList.remove("blue-text");
     const className = topMostElement.parentNode.parentNode.id;
     activeList = document.getElementsByClassName(className)[0];
     activeList.classList.add("active");
-    activeList.classList.add("cyan");
-    activeList.classList.add("lighten-3");
+    activeList.classList.add("teal");
+    activeList.classList.add("lighten-2");
+    activeList.classList.add("blue-text");
 }

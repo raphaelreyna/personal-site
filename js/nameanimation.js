@@ -1,7 +1,7 @@
 const fadeInROC = 0.01;
-const fadeOutROC = 0.01;
-const posROC = 1;
-const overlapSpacing = 10;
+const fadeOutROC = 0.018;
+const posROC = 1.0;
+const overlapSpacing = 3.5;
 
 const first = {
     name: document.getElementById('firstName'),
@@ -25,7 +25,8 @@ function fadeInName() {
         last.name.setAttribute("fill-opacity", opacity);
         last.tail.setAttribute("fill-opacity", opacity);
         window.requestAnimationFrame(fadeInName);
-    } else {
+    }
+    else {
         fadeOutTails();
     }
 }
