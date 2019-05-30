@@ -14,23 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="teal-text text-lighten-5 grey darken-1">
-    <!-- Start of Navbar -->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper grey darken-2">
-                <a href="#!" class="brand-logo center teal-text text-lighten-5" id="navTitle">Projects</a>
-                <ul>
-                    <li>
-                        <a href="#" data-target="slide-out" class="pushpin sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- End of Navbar -->
-
+<body class="teal-text text-lighten-5 grey darken-2">
     <!-- Start of Sidenav -->
     <ul id="slide-out" class="sidenav sidenav-fixed collapsible grey darken-3">
         <li>
@@ -42,7 +26,7 @@
             </div>
         </li>
         <li>
-            <svg viewBox="0 0 190 20" width="190" height="20" xmlns="http://www.w3.org/2000/svg" fill="#e0f2f1">
+            <svg id="nameAnimation" viewBox="0 0 190 20" width="190" height="20" xmlns="http://www.w3.org/2000/svg" fill="#e0f2f1">
                 <defs>
                     <style type="text/css">
                         @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
@@ -59,23 +43,20 @@
             </svg>
             <div class="divider"></div>
         </li>
-        <li>Navigation</li>
+        <li style="padding-left:3px;">Navigation</li>
         <li>
-            <div class="collapsible-header"><a id="homeLink" href="../index.html">Home</a></div>
+            <div class="collapsible-header"><a class="sideNavLink" href="../index.html">Home</a></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><a class="sideNavLink" href="about.html">About</a></div>
         </li>
         <li class="active teal">
             <div class="collapsible-header">Projects</div>
             <div class="collapsible-body grey lighten-2">
                 <ul>
-                    <li class="projli subseriesweb"><a class="waves-effect" href="projects.html#subseriesweb">Subseries Web</a></li>
-                    <li class="projli tinyterm"><a class="waves-effect" href="projects.html#tinyterm">TinyTerm</a></li>
-                    <li class="projli chapters"><a class="waves-effect" href="projects.html#chapters">Chapters</a></li>
-                    <li class="projli bbmail"><a class="waves-effect" href="projects.html#bbmail">BBMail</a></li>
-                    <li class="projli cliifs"><a class="waves-effect" href="projects.html#cliifs">Cliifs</a></li>
-                    <li class="projli subseriesdesk"><a class="waves-effect" href="projects.html#subseriesdesk">Subseries</a></li>
-                    <li class="projli lwpsplitter"><a class="waves-effect" href="projects.html#lwpsplitter">LWP Splitter</a></li>
-                    <li class="projli rpiheater"><a class="waves-effect" href="projects.html#rpiheater">RPi Heater</a></li>
-                    <li class="projli thissite"><a class="waves-effect" href="projects.html#thissite">This Site</a></li>
+                    <li class="sectionli activ active teal lighten-2"><a class="waves-effect" href="projects.html#activ">Active</a></li>
+                    <li class="sectionli somewhat"><a class="waves-effect" href="projects.html#somewhat">Somewhat Active</a></li>
+                    <li class="sectionli inactive"><a class="waves-effect" href="projects.html#inactive">Inactive</a></li>
                 </ul>
             </div>
         </li>
@@ -103,6 +84,24 @@
     <main>
         <div class="container">
 
+            <!-- Begin section break -->
+            <!-- Active Projects -->
+            <div class="row sectionBreak paddedTop paddedBottom" id="activ">
+                <div class="col s12">
+                    <div class="card-panel teal darken-2 z-depth-4">
+                        <h4 class="center-align">
+                            Active Projects
+                        </h4>
+                        <div class="center-align">
+                            Projects that I am currently working on and devoting time to.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End section break -->
+
+            <div class="divider"></div>
+
             <!-- Subseries Web App -->
             <div class="row paddedBottom paddedTop" id="subseriesweb">
                 <div class="col s4">
@@ -124,6 +123,67 @@
 
             <div class="divider"></div>
 
+            <!-- Chapters -->
+            <div class="row  paddedTop paddedBottom" id="chapters">
+                <div class="col s8">
+                    <h5><a href="https://github.com/raphaelreyna/Chapters">
+                        <image src="../images/ghmark.png" height="20px" width="20px">
+                    </a> Chapters</h5>
+                    A macOS app for splitting a PDF into smaller PDFs based on the table of contents.
+                    Can save PDFs in a structured directory that reflects the structure of the table of contents.
+                </div>
+                <div class="col s4">
+                    <div class="card projDescr z-depth-4">
+                        <div class="card-image">
+                            <img src="../images/chapters.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- RPi Heater -->
+            <div class="row  paddedTop paddedBottom" id="rpiheater">
+                <div class="col s4">
+                    <div class="card projDescr z-depth-4">
+                        <div class="card-image">
+                            <img src="../images/rpiheater.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s8">
+                    <h5><a href="https://github.com/raphaelreyna/RPi-Heater-Kernel-Module">
+                        <image src="../images/ghmark.png" height="20px" width="20px">
+                    </a> Raspbery Pi Heater</h5>
+                    A linux kernel module for the Raspberry Pi; used for driving a high temperature heating element.
+                    Presents the heating element and a thermocouple as a device file on the file system.
+                    Has built in safety features to protect from end user errors in industrial applications.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Begin section break -->
+            <!-- Somewhat Active Projects -->
+            <div class="row sectionBreak paddedTop paddedBottom" id="somewhat">
+                <div class="col s12">
+                    <div class="card-panel teal darken-2 z-depth-4">
+                        <h4 class="center-align">
+                            Somewhat Active Projects
+                        </h4>
+                        <div class="center-align">
+                            Projects that I may come back to every now and again to touch up or update.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- End section break -->
+
+            <div class="divider" ></div>
             <!-- TinyTerm -->
             <div class="row paddedTop paddedBottom" id="tinyterm">
                 <div class="col s8">
@@ -147,24 +207,59 @@
 
             <div class="divider"></div>
 
-            <!-- Chapters -->
-            <div class="row  paddedTop paddedBottom" id="chapters">
+
+            <!-- This site -->
+            <div class="row  paddedTop paddedBottom" id="thissite">
                 <div class="col s4">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
-                            <img src="../images/chapters.jpg">
+                            <img src="../images/portfolioFractal.png">
                         </div>
                     </div>
                 </div>
-
                 <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/Chapters">
+                    <h5><a href="https://github.com/raphaelreyna/raphaelreyna.github.io">
                             <image src="../images/ghmark.png" height="20px" width="20px">
-                        </a> Chapters</h5>
-                    A macOS app for splitting a PDF into smaller PDFs based on the table of contents.
-                    Can save PDFs in a structured directory that reflects the structure of the table of contents.
+                        </a> This Site</h5>
+                    A static web site, meant to serve as an online portfolio.
+                    Made using HTML 5, CSS, Javascript and the <a href="https://www.materializecss.com">Materialize CSS</a> library.
                 </div>
             </div>
+
+            <div class="divider"></div>
+
+            <!-- Subseries Desktop -->
+            <div class="row  paddedTop paddedBottom" id="subseriesdesk">
+                <div class="col s8">
+                    <h5><a href="https://github.com/raphaelreyna/Subseries">
+                            <image src="../images/ghmark.png" height="20px" width="20px">
+                        </a> Subseries Desktop App</h5>
+                    A cross-platform app written in python for constructing, evaluating and plotting millions of subseries of holomorphic functions in parallel.
+                    Uses OpenCL and OpenGL interoperably to compute and render the fractal images.
+                </div>
+
+                <div class="col s4">
+                    <div class="card projDescr z-depth-4">
+                        <div class="card-image">
+                            <img src="../images/ssdesktop.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Begin section break -->
+            <!-- Inctive Projects -->
+            <div class="row sectionBreak paddedTop paddedBottom" id="inactive">
+                <div class="col s12">
+                    <div class="card-panel teal darken-2 z-depth-4">
+                        <h4 class="center-align">Inactive Projects</h4>
+                        <div class="center-align">Projects that I consider to be (mostly) completed.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End section break -->
 
             <div class="divider"></div>
 
@@ -214,29 +309,16 @@
 
             <div class="divider"></div>
 
-            <!-- Subseries Desktop -->
-            <div class="row  paddedTop paddedBottom" id="subseriesdesk">
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/Subseries">
-                            <image src="../images/ghmark.png" height="20px" width="20px">
-                        </a> Subseries Desktop App</h5>
-                    A cross-platform app written in python for constructing, evaluating and plotting millions of subseries of holomorphic functions in parallel.
-                    Uses OpenCL and OpenGL interoperably to compute and render the fractal images.
-                </div>
-
-                <div class="col s4">
-                    <div class="card projDescr z-depth-4">
-                        <div class="card-image">
-                            <img src="../images/ssdesktop.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
             <!-- LWP Splitter -->
             <div class="row  paddedTop paddedBottom" id="lwpsplitter">
+                <div class="col s8">
+                    <h5><a href="https://github.com/raphaelreyna/LWPSplitter">
+                        <image src="../images/ghmark.png" height="20px" width="20px">
+                    </a> LWP Splitter</h5>
+                    A command line application for computing and storing the roots of Littlewood polynomials, along with metadata.
+                    Starts with linear polynomials, and works its way up in degree.
+                    LWP Splitter is stateful, it can be restarted and will pick up where it left off.
+                </div>
                 <div class="col s4">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
@@ -244,65 +326,13 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/LWPSplitter">
-                            <image src="../images/ghmark.png" height="20px" width="20px">
-                        </a> LWP Splitter</h5>
-                    A command line application for computing and storing the roots of Littlewood polynomials, along with metadata.
-                    Starts with linear polynomials, and works its way up in degree.
-                    LWP Splitter is stateful, it can be restarted and will pick up where it left off.
-                </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- RPi Heater -->
-            <div class="row  paddedTop paddedBottom" id="rpiheater">
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/RPi-Heater-Kernel-Module">
-                            <image src="../images/ghmark.png" height="20px" width="20px">
-                        </a> Raspbery Pi Heater</h5>
-                    A linux kernel module for the Raspberry Pi; used for driving a high temperature heating element.
-                    Presents the heating element and a thermocouple as a device file on the file system.
-                    Has built in safety features to protect from end user errors in industrial applications.
-                </div>
-                <div class="col s4">
-                    <div class="card projDescr z-depth-4">
-                        <div class="card-image">
-                            <img src="../images/rpiheater.jpeg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- This site -->
-            <div class="row  paddedTop paddedBottom" id="thissite">
-                <div class="col s4">
-                    <div class="card projDescr z-depth-4">
-                        <div class="card-image">
-                            <img src="../images/portfolioFractal.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/raphaelreyna.github.io">
-                            <image src="../images/ghmark.png" height="20px" width="20px">
-                        </a> This Site</h5>
-                    A static web site, meant to serve as an online portfolio.
-                    Made using HTML 5, CSS, Javascript and the <a href="https://www.materializecss.com">Materialize CSS</a> library.
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="row paddedBottom paddedTop"></div>
             <div class="row padded">
                 <div class="col s6 offset-s3"><a href="https://github.com/raphaelreyna" class="teal-text text-lighten-2">Check out all of my repositories on Github</a></div>
             </div>
-            <div class="row paddedTop"></div>
         </div>
     </main>
     <!-- Compiled and minified JavaScript -->

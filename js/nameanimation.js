@@ -1,7 +1,11 @@
-const fadeInROC = 0.01;
-const fadeOutROC = 0.018;
-const posROC = 1.0;
+const fadeROC = 0.1;
+const firstPosROC = 2.4;
+const lastPosROC = 0.8;
 const overlapSpacing = 3.5;
+const expandedSpacing = 60;
+
+var expnsn_cntrctn = 1; // 1 for contraction, -1 for expansion
+var animating = true;
 
 const first = {
     name: document.getElementById('firstName'),
@@ -18,44 +22,59 @@ const last = {
 function fadeInName() {
     var opacity = parseFloat(last.name.getAttribute("fill-opacity"));
     if (opacity < 1.0) {
-        opacity += fadeInROC;
+        opacity += 0.01;
         opacity = opacity.toString();
         first.name.setAttribute("fill-opacity", opacity);
         first.tail.setAttribute("fill-opacity", opacity);
         last.name.setAttribute("fill-opacity", opacity);
         last.tail.setAttribute("fill-opacity", opacity);
         window.requestAnimationFrame(fadeInName);
-    }
-    else {
-        fadeOutTails();
-    }
-}
-
-function fadeOutTails() {
-    var opacity = parseFloat(first.tail.getAttribute("fill-opacity"));
-    if (opacity > 0.0) {
-        opacity -= fadeOutROC;
-        opacity = opacity.toString();
-        first.tail.setAttribute("fill-opacity", opacity);
-        last.tail.setAttribute("fill-opacity", opacity);
-        window.requestAnimationFrame(fadeOutTails);
     } else {
-        centerNames();
+        expandContract();
     }
 }
 
-function centerNames() {
+function needAnimationFrame() {
+    const firstPos = parseFloat(first.name.getAttribute("x"));
+    const lastPos = parseFloat(last.name.getAttribute("x"));
+    const diff = lastPos - firstPos;
+    if (expnsn_cntrctn == 1) {
+        return (diff > overlapSpacing);
+    } else {
+        return (diff < expandedSpacing);
+    }
+}
+
+function expandContract() {
     var firstPos = parseFloat(first.name.getAttribute("x"));
     var lastPos = parseFloat(last.name.getAttribute("x"));
-    if ((lastPos - firstPos) > overlapSpacing) {
-        firstPos += 1.2*posROC;
-        lastPos -= 0.4*posROC;
+    var opacity = parseFloat(last.tail.getAttribute("fill-opacity"));
+
+    if (needAnimationFrame()) {
+        firstPos += expnsn_cntrctn*firstPosROC;
+        lastPos -= expnsn_cntrctn*lastPosROC;
         firstPos = firstPos.toString();
         lastPos = lastPos.toString();
         first.name.setAttribute("x", firstPos);
         last.name.setAttribute("x", lastPos);
-        window.requestAnimationFrame(centerNames);
+        opacity -= expnsn_cntrctn*fadeROC;
+        opacity = opacity.toString();
+        first.tail.setAttribute("fill-opacity", opacity);
+        last.tail.setAttribute("fill-opacity", opacity);
+        window.requestAnimationFrame(expandContract);
+    } else {
+        animating = false;
     }
 }
 
+function handleMouse() {
+    expnsn_cntrctn *= -1;
+    if (!animating) {
+        animating = true;
+        expandContract();
+    }
+}
+
+document.getElementById("nameAnimation").addEventListener("mouseenter", handleMouse);
+document.getElementById("nameAnimation").addEventListener("mouseleave", handleMouse);
 fadeInName();

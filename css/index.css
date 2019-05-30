@@ -30,10 +30,10 @@ header, main, footer{
     padding-bottom: 40px;
 }
 
-#homeLink:link {
+.sideNavLink:link {
     color: white;
 }
 
-#homeLink:visited {
+.sideNavLink:visited {
     color: white;
 }
