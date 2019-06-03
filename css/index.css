@@ -30,10 +30,22 @@ header, main, footer{
     padding-bottom: 40px;
 }
 
-.sideNavLink:link {
-    color: white;
+a:link {
+    color: #e0f2f1;
 }
 
-.sideNavLink:visited {
-    color: white;
+a:visited {
+    color: #e0f2f1;
+}
+
+.modalLink:link {
+    color: #004d40;
+}
+
+.modalLink:visited {
+    color: #004d40;
+}
+
+.modal .container {
+    width: 98%;
 }

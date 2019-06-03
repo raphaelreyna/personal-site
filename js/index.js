@@ -5,4 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     instances = M.Sidenav.init(elems, {preventScrolling: false});
     elems = document.querySelectorAll('.pushpin');
     instances = M.Pushpin.init(elems, null);
+    elems = document.querySelectorAll('.modal');
+    instances = M.Modal.init(elems, {startingTop: '50%'});
 });
