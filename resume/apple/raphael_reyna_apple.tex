@@ -1,0 +1,98 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{../res}
+\usepackage{multicol}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
+\name{Raphael Reyna}
+
+\address{Email: raphaelreyna@protonmail.com \\
+  Phone: (626) 384-1342\\
+  Site: www.raphaelreyna.works}
+                           
+                        
+\begin{resume} 
+\section{PROJECTS}
+  
+\normalsize{\section{TinyTerm}}
+A macOS app; a fire-and-forget terminal emulator that lives in the menu bar.
+Uses the Darwin framework to maintain an active PTY session running a shell.
+A shortcut brings up a dialog to enter commands to be ran.
+\begin{itemize}
+\item {\bf Languages Used: } Swift 4 
+\item {\bf Technologies Used: } AppKit, Carthage, Darwin, Xcode
+\end{itemize}
+
+\normalsize{\section{Chapters}}
+A macOS app for splitting PDFs into smaller PDFs.
+Can split PDFs based on a user defined layout, or using the
+table of contents of the PDF to split it into its chapters.
+If a PDF is split based on its table of contents, the files are saved in a
+structured directory that reflects the structure of the table of contents.
+\begin{itemize}
+\item{ \bf Languages Used: } Swift 4 
+\item { \bf Technologies Used: } AppKit, Carthage, PDFKit, Xcode
+\end{itemize}
+
+\normalsize{\section{Subseries Plotter}}
+A python app that uses GPGPU to render computationally expensive
+fractals.
+Uses OpenCL to compute the fractal data, and then OpenGL to plot the data.
+OpenCL and OpenCL are used interoperably in order to minimize the performance hit due to context switching.
+\begin{itemize}
+\item {\bf Languages Used: } Python 3, OpenCL C, GLSL C
+\item {\bf Technologies Used: } OpenGL, OpenCL
+\end{itemize}
+
+\normalsize{\section{LWP Splitter}}
+Fully containerized application that generates and stores mathematical data for
+research.
+Uses PostgreSQL to not only store data but to efficiently prepare the data for
+consumption by machine learning algorithms for training.
+A python app generates the data and sends it to the PostgreSQL
+database, while providing a REST API to control the data generation process.
+\begin{itemize}
+\item{ \bf Languages Used: } Python, PL/pgSQL, SQL, Bash, YAML
+\item { \bf Technologies Used: } Flask, Flask-Restful, Numpy, Pillow, PostgreSQL, Docker
+\end{itemize}
+
+\section{RELEVANT EXPERIENCE}
+{\bf Cal Poly Pomona, Pomona, CA}\newline
+{\it Mathematics Instructor}\newline
+{\bf 2015 - Present}\newline
+Responsibilities included designing a course schedule, complete with lecture and
+evaluation material; as well as leading the class through the material and
+regularly conducting evaluations of student performance.\newline
+Courses taught:
+\begin{multicols}{2}
+\begin{itemize}
+\item Calculus I {\it and} Calculus II
+\item Trigonometry
+  \columnbreak
+\item College Algebra
+\item Remedial Mathematics
+\end{itemize}
+\end{multicols}
+
+\section{EDUCATION}
+Cal Poly Pomona, Pomona, CA \\
+B.S. Applied Mathematics and Statistics with a minor in Physics, 2015 \newline
+M.S. Pure Mathematics, expected summer 2019
+
+  \section{RELEVANT SKILLS}
+Bash, BSD, C, C++, Carthage, Clang, Cocoapods, Data Science, Docker, Emacs,
+ES6, Flask, Forecasting,
+Full stack web development, GCC, GDB, Git/Github, GPGPU, Gunicorn, iOS, Linux, LLDB,
+macOS, Machine
+Learning, Make, Mathematica, NodeJS, NPM, OpenCL, OpenGL, PostgreSQL,
+PyPi, R/RStudio, RESTful APIs, SQL, UNIX, WebGL, Xcode,
+
+  \section{OTHER}
+  3D Printing, CAD, Circuit Design, Hardware Design, Italian, Soldering, Spanish
+ 
+\end{resume}
+\end{document}
