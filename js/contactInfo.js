@@ -16,7 +16,7 @@ const phoneSpan = document.getElementById("contactPhone");
 
 function loadContactInfo() {
     emailSpan.innerHTML = e;
-    phoneSpan.innerHTML = p;
+    //phoneSpan.innerHTML = p;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
