@@ -45,32 +45,14 @@
             </svg>
             <div class="divider"></div>
         </li>
-        <li style="padding-left:3px;">Navigation</li>
         <li>
-            <div class="collapsible-header"><a class="sideNavLink" href="../index.html">Home</a></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><a class="sideNavLink" href="about.html">About</a></div>
+            <div class="collapsible-header"><a class="sideNavLink" href="../index.html">About</a></div>
         </li>
         <li class="active teal">
-            <div class="collapsible-header">Projects</div>
-            <div class="collapsible-body grey lighten-2">
-                <ul>
-                    <li class="sectionli activ active teal lighten-2"><a class="waves-effect" href="projects.html#activ">Active</a></li>
-                    <li class="sectionli somewhat"><a class="waves-effect" href="projects.html#somewhat">Somewhat Active</a></li>
-                    <li class="sectionli inactive"><a class="waves-effect" href="projects.html#inactive">Inactive</a></li>
-                </ul>
-            </div>
+            <div class="collapsible-header"><a class="sideNavLink" href="projects.html">Open Source Projects</a></div>
         </li>
         <li>
-            <div class="collapsible-header">R&eacute;sum&eacute;</div>
-            <div class="collapsible-body grey lighten-2">
-                <ul>
-                    <li><a href="../resume/short/raphael_reyna_short.pdf">General Short Form</a></li>
-                    <li><a href="../resume/web/raphael_reyna_web.pdf">Web Dev</a></li>
-                    <li><a href="../resume/apple/raphael_reyna_apple.pdf">macOS/iOS Dev</a></li>
-                </ul>
-            </div>
+            <div class="collapsible-header"><a class="sideNavLink" href="../resume/raphael_reyna_short.pdf">R&eacute;sum&eacute;</a></div>
         </li>
         <li>
             <div class="collapsible-header">
@@ -122,21 +104,25 @@
     <main>
         <div class="container">
 
-            <!-- Begin section break -->
-            <!-- Active Projects -->
-            <div class="row sectionBreak paddedTop paddedBottom" id="activ">
-                <div class="col s12">
-                    <div class="card-panel teal darken-2 z-depth-4">
-                        <h4 class="center-align">
-                            Active Projects
-                        </h4>
-                        <div class="center-align">
-                            Projects that I am currently working on and devoting time to.
+            <!-- LaTTe -->
+            <div class="row  paddedTop paddedBottom" id="chapters">
+                <div class="col s6">
+                    <h5><a href="https://github.com/raphaelreyna/LaTTe">
+                        <image src="../images/ghmark.png" height="20px" width="20px">
+                    LaTTe</a></h5>
+                    Cloud native programmatic document generation as an HTTP service.<br>
+                    LaTTe makes it easy for developers to quickly add professional looking PDFs to their web applications using LaTeX and JSON.
+                    Designed with extensibility and modularity in mind, LaTTe includes a custom build script and leverages the Go language's build system to easily allow developers to create custom builds and Docker images of LaTTe to fit their needs.<br>
+                    <br><a href="https://raphaelreyna.works/latte">Check out the live demo!</a>
+                </div>
+                <div class="col s4 offset-s2">
+                    <div class="card projDescr z-depth-4">
+                        <div class="card-image">
+                            <img src="../images/latte.JPG">
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End section break -->
 
             <div class="divider"></div>
 
@@ -150,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="col s8">
+                <div class="col s6 offset-s2">
                     <h5><a href="https://github.com/raphaelreyna/Subseries-WebGL">
                             <image src="../images/ghmark.png" height="20px" width="20px">
                          Subseries Web App</a></h5>
@@ -163,14 +149,14 @@
 
             <!-- Chapters -->
             <div class="row  paddedTop paddedBottom" id="chapters">
-                <div class="col s8">
+                <div class="col s6">
                     <h5><a href="https://github.com/raphaelreyna/Chapters">
                         <image src="../images/ghmark.png" height="20px" width="20px">
                      Chapters</a></h5>
                     A macOS app for splitting a PDF into smaller PDFs based on the table of contents.
                     Can save PDFs in a structured directory that reflects the structure of the table of contents.
                 </div>
-                <div class="col s4">
+                <div class="col s4 offset-s2">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
                             <img src="../images/chapters.jpg">
@@ -190,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s8">
+                <div class="col s6 offset-s2">
                     <h5><a href="https://github.com/raphaelreyna/RPi-Heater-Kernel-Module">
                         <image src="../images/ghmark.png" height="20px" width="20px">
                      Raspberry Pi Heater</a></h5>
@@ -202,46 +188,49 @@
 
             <div class="divider"></div>
 
-            <!-- Begin section break -->
-            <!-- Somewhat Active Projects -->
-            <div class="row sectionBreak paddedTop paddedBottom" id="somewhat">
-                <div class="col s12">
-                    <div class="card-panel teal darken-2 z-depth-4">
-                        <h4 class="center-align">
-                            Somewhat Active Projects
-                        </h4>
-                        <div class="center-align">
-                            Projects that I may come back to every now and again to touch up or update.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- End section break -->
-
             <!-- LWP Splitter -->
             <div class="row  paddedTop paddedBottom" id="lwpsplitter">
-                <div class="col s4">
+                <div class="col s6">
+                    <h5><a href="https://github.com/raphaelreyna/LWPSplitter">
+                        <image src="../images/ghmark.png" height="20px" width="20px">
+                        LWP Splitter</a>
+                    </h5>
+                    A fully containerized backend for a web app for studying roots of Littlewood polynomials.
+                    Store labeled data in a PostgreSQL database, ready to be used to train machine learning models.
+                    Provides a RESTful API for controlling the data generation process.
+                    Can also create plots of query results.
+                </div>
+                <div class="col s4 offset-s2">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
                             <img src="../images/lwpsplitter.png">
                         </div>
                     </div>
                 </div>
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/LWPSplitter">
-                        <image src="../images/ghmark.png" height="20px" width="20px">
-                            LWP Splitter</a></h5>
-                            A fully containerized backend for a web app for studying roots of Littlewood polynomials.
-                            Sets up a PostgreSQL database to store labeled data, ready to be used to train machine learning models.
-                            Provides a RESTful API for controlling the data generation process.
-                            Can also create plots of query results.
-                </div>
             </div>
 
             <div class="divider" ></div>
+
+            <!-- This site -->
+            <div class="row  paddedTop paddedBottom" id="thissite">
+                <div class="col s4">
+                    <div class="card projDescr z-depth-4">
+                        <div class="card-image">
+                            <img src="../images/portfolioFractal.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s8">
+                    <h5><a href="https://github.com/raphaelreyna/raphaelreyna.github.io">
+                            <image src="../images/ghmark.png" height="20px" width="20px">
+                                This Site</a></h5>
+                    A static web site, meant to serve as an online portfolio.
+                    Made using HTML 5, CSS, Javascript and the <a href="https://www.materializecss.com">Materialize CSS</a> library.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
             <!-- TinyTerm -->
             <div class="row paddedTop paddedBottom" id="tinyterm">
                 <div class="col s8">
@@ -265,65 +254,32 @@
 
             <div class="divider"></div>
 
-
-            <!-- This site -->
-            <div class="row  paddedTop paddedBottom" id="thissite">
+            <!-- Subseries Desktop -->
+            <div class="row  paddedTop paddedBottom" id="subseriesdesk">
                 <div class="col s4">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
-                            <img src="../images/portfolioFractal.png">
+                            <img src="../images/ssdesktop.png" width="150px">
                         </div>
                     </div>
                 </div>
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/raphaelreyna.github.io">
+                <div class="col s6 offset-s2">
+                    <h5>
+                        <a href="https://github.com/raphaelreyna/Subseries">
                             <image src="../images/ghmark.png" height="20px" width="20px">
-                                This Site</a></h5>
-                    A static web site, meant to serve as an online portfolio.
-                    Made using HTML 5, CSS, Javascript and the <a href="https://www.materializecss.com">Materialize CSS</a> library.
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- Subseries Desktop -->
-            <div class="row  paddedTop paddedBottom" id="subseriesdesk">
-                <div class="col s8">
-                    <h5><a href="https://github.com/raphaelreyna/Subseries">
-                            <image src="../images/ghmark.png" height="20px" width="20px">
-                         Subseries Desktop App</a></h5>
+                            Subseries Desktop App
+                        </a>
+                    </h5>
                     A cross-platform app written in python for constructing, evaluating and plotting millions of subseries of holomorphic functions in parallel.
                     Uses OpenCL and OpenGL interoperably to compute and render the fractal images.
                 </div>
-
-                <div class="col s4">
-                    <div class="card projDescr z-depth-4">
-                        <div class="card-image">
-                            <img src="../images/ssdesktop.png">
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <div class="divider"></div>
-
-            <!-- Begin section break -->
-            <!-- Inctive Projects -->
-            <div class="row sectionBreak paddedTop paddedBottom" id="inactive">
-                <div class="col s12">
-                    <div class="card-panel teal darken-2 z-depth-4">
-                        <h4 class="center-align">Inactive Projects</h4>
-                        <div class="center-align">Projects that I consider to be (mostly) completed.</div>
-                    </div>
-                </div>
-            </div>
-            <!-- End section break -->
 
             <div class="divider"></div>
 
             <!-- BBMail -->
             <div class="row  paddedTop paddedBottom" id="bbmail">
-                <div class="col s8">
+                <div class="col s6">
                     <h5><a href="https://github.com/raphaelreyna/BBMail">
                             <image src="../images/ghmark.png" height="20px" width="20px"> BBMail</a></h5>
                     Are you a teacher who hates the process of posting announcements to the BlackBoard learning management system?
@@ -332,7 +288,7 @@
                     Just email BBMail your announcement, with the course you wish to post to in the subject, and BBMail takes care of the rest.
                 </div>
 
-                <div class="col s4">
+                <div class="col s4 offset-s2">
                     <div class="card projDescr z-depth-4">
                         <div class="card-image">
                             <img src="../images/bbmail.png">
@@ -353,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="col s8">
+                <div class="col s6 offset-s2">
                     <h5><a href="https://github.com/raphaelreyna/cliifs">
                             <image src="../images/ghmark.png" height="20px" width="20px">
                                 Cliifs</a></h5>

@@ -8,7 +8,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="../css/index.css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,32 +46,13 @@
             </svg>
             <div class="divider"></div>
         </li>
-        <li style="padding-left: 3px;">Navigation</li>
         <li class="active teal">
-            <div class="collapsible-header"><a class="sideNavLink" href="index.html">Home</a></div>
+            <div class="collapsible-header"><a class="sideNavLink" href="index.html">About</a></div>
+         <li>
+            <div class="collapsible-header"><a class="sideNavLink" href="html/projects.html">Open Source Projects</a></div>
         </li>
         <li>
-            <div class="collapsible-header"><a class="sideNavLink" href="html/about.html">About</a></div>
-        </li>
-        <li>
-            <div class="collapsible-header">Projects</div>
-            <div class="collapsible-body grey lighten-2">
-                <ul>
-                    <li class="sectionli activ"><a class="waves-effect" href="html/projects.html#activ">Active</a></li>
-                    <li class="sectionli somewhat"><a class="waves-effect" href="html/projects.html#somewhat">Somewhat Active</a></li>
-                    <li class="sectionli inactive"><a class="waves-effect" href="html/projects.html#inactive">Inactive</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">R&eacute;sum&eacute;</div>
-            <div class="collapsible-body grey lighten-2">
-                <ul>
-                    <li><a href="../resume/short/raphael_reyna_short.pdf">General Short Form</a></li>
-                    <li><a href="../resume/web/raphael_reyna_web.pdf">Web Dev</a></li>
-                    <li><a href="../resume/apple/raphael_reyna_apple.pdf">macOS/iOS Dev</a></li>
-                </ul>
-            </div>
+            <div class="collapsible-header"><a class="sideNavLink" href="./resume/raphael_reyna_short.pdf">R&eacute;sum&eacute;</a></div>
         </li>
         <li>
             <div class="collapsible-header">
@@ -100,10 +81,10 @@
                             <li>
                                 <div class="divided"></div>
                             </li>
-                            <li>
-                                <i class="material-icons tiny">phone</i>
-                                <span id="contactPhone"></span>
-                            </li>
+                            <!-- <li>
+                                 <i class="material-icons tiny">phone</i>
+                                 <span id="contactPhone"></span>
+                                 </li> -->
                             <li>
                                 <i class="material-icons tiny">location_city</i>
                                 <span>Rancho Cucamonga, CA, USA</span>
@@ -122,29 +103,62 @@
             <a href="#!" class="modal-close waves-effect waves-teal btn-flat teal-text text-darken-4">Close</a>
         </div>
     </div>
-    <!-- End Modal -->
 
+    <!-- End Modal -->
     <main>
         <div class="container">
-            <div class="row padded-small"></div>
-            <div class="divider"></div>
             <div class="row padded">
-                <div class="col s8 offset-s2">
-                    <h5>Programmer, Mathematician, Educator</h5>
-                    I like to wear a lot of proverbial hats; taking a multi-disciplinary approach to problem solving.
-                    Researching, learning, communicating and implementing new techonologies in order to take on projects in a wide variety of fields is a hobby of mine.
+                <div class="col s10 offset-s1">
+                    <h5>Summary</h5>
+                    My name is Raphael Reyna, currently working as lead software engineer at The Recovery Watchdog.<br>
+                    I very much enjoy programming in general but web services and number crunching on GPUs are the two areas that really hold my attention.
+                    Hardware is also something I enjoy working with and I make small gizmos/devices with my 3D printer and soldering iron on my spare time.
                 </div>
             </div>
+
             <div class="divider"></div>
-            <div class="row padded"></div>
+
+            <div class="row padded">
+                <div class="col s10 offset-s1">
+                    <h5>Education</h5>
+                    I currently hold a B.S. in Applied Mathematics and Statistics, along with a minor in physics;
+                    I am also currently working towards an M.S. in Pure Mathematics, which I expect to receive this summer.
+                    Outside of this, I have also attended and completed graduate courses in machine learning, data science, and time series.
+                    I have done research in fractal geometry and complex analysis, as well as given talks on the results.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row padded">
+                <div class="col s10 offset-s1">
+                    <h5>Software</h5>
+                    Software is something I've been involved with for the past 15 years or so since I was introduced to Linux and open source software.
+                    During my education I gained experience in scientific computing, including using python, R, and Mathematica for research and data analysis,
+                    and OpenCL for high performance, parallelized computing on GPU's.
+                    I currently maintain a few open source projects, which can all be found in my <a href="https://github.com/raphaelreyna">GitHub repos</a>.
+                    My most recent work has been building a backend for a patient management service as well as over seeing the development of the frontend mobile app.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row padded">
+                <div class="col s10 offset-s1">
+                    <h5>Hardware</h5>
+                    I have experience in designing both hardware and software for IOT devices, for both consumer and industrial applications.
+                    I also have experience with 3D printing including upgrading and repairing 3D printing hardware.
+                </div>
+            </div>
+
         </div>
     </main>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/nameanimation.js"></script>
-    <script src="js/tesseract.js"></script>
-    <script src="js/contactInfo.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/nameanimation.js"></script>
+    <script src="../js/tesseract.js"></script>
+    <script src="../js/contactInfo.js"></script>
 </body>
 
 </html>

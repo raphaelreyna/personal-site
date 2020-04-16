@@ -1,0 +1,96 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{./res}
+\usepackage{multicol}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
+\name{Raphael Reyna}
+
+\address{Email: raphaelreyna@protonmail.com \\
+  Phone: (626) 384-1342 \\
+  Site: www.raphaelreyna.works}
+                           
+                        
+\begin{resume} 
+\section{Open Source Projects}
+
+{\bf LaTTe (Author)}\newline
+LaTTe provides programmatic document generation as an HTTP service.
+Users submit a templated LaTeX, following Go's templating format, and a JSON object and any resources they may need (such as images) to produce
+a PDF document. Supports registering template and resource files to reduce traffic, CORS, caching, and has a flexbile persistence model.
+URL: github.com/raphaelreyna/latte
+\begin{multicols}{2}
+\begin{itemize}
+\item {\bf Languages Used: }\newline Go, Shell, TeX
+  \columnbreak
+\item {\bf Technologies Used: }\newline Docker, Bash, pdfTeX/pdfLaTeX
+\end{itemize}
+\end{multicols}
+
+{\bf EinsteinPy (Contributor)}\newline
+EinsteinPy is an open source pure Python package dedicated to problems arising in General Relativity and gravitational physics.
+My contributions to the project were to increase performance by using my background in math to exploit symmetries in some of the underlying matrix and tensor computations.
+URL: github.com/einsteinpy/einsteinpy
+\begin{multicols}{2}
+\begin{itemize}
+\item {\bf Languages Used: }\newline Python, Wolfram Language
+  \columnbreak
+\item {\bf Technologies Used: }\newline Wolfram Mathematica, Group Theory, Tensor Algebra
+\end{itemize}
+\end{multicols}
+
+{\bf Subseries Web App (Author)}\newline
+A full-stack web app for computing massively parallel evaluations of complex
+valued functions in real time using WebGL, written as a part of my Masters thesis on subseries of holomorphic functions.
+Front end is written in Javascript and JSX using ReactJS.
+Backend is written in python and is running as a Docker container on Heroku.
+Can also be used to make really pretty fractal animations.
+URL: github.com/raphaelreyna/subseries-webgl
+\begin{multicols}{2}
+\begin{itemize}
+\item {\bf Languages Used: }\newline HTML, Javascript, JSX, CSS, Python, YAML
+  \columnbreak
+\item {\bf Technologies Used: }\newline WebGL, ReactJS,
+  Docker, Sympy, Flask, Materialize CSS
+\end{itemize}
+\end{multicols}
+
+\section{RELEVANT WORK EXPERIENCE}
+{\bf The Recovery Watchdog}\newline
+{\it Lead Software Engineer}\newline
+{\bf September 2019 - Present}\newline
+At The Recovery Watchdog, I designed and developed the backend to the their patient management service.
+The backend follows a microservice architecture, with all microservices written in Go and include tests.
+I also managed, and was heavily involved with the development of the frontend mobile app which was written using React Native by 4 people including myself.
+Additionally I wrote the Kubernetes manifests for both the development and testing deployments, which I also handled both on prem and on AWS respectively.
+
+{\bf Cal Poly Pomona, Pomona, CA}\newline
+{\it Mathematics Instructor}\newline
+{\bf 2015 - Present}\newline
+Responsibilities included designing a course schedule, complete with lecture and
+evaluation material; as well as leading the class through the material and
+regularly conducting evaluations of student performance.\newline
+\ \newline
+Courses taught include: Calculus I, Calculus II, Trigonometry, College Algebra,
+Remedial Mathematics.
+
+\section{EDUCATION}
+Cal Poly Pomona, Pomona, CA \\
+B.S. Applied Mathematics and Statistics with a minor in Physics, 2015 \newline
+M.S. Pure Mathematics, expected summer 2019
+
+\section{RELEVANT SKILLS}
+AWS, C/C++, Data Science, Docker, Flask, 
+Git/Github, Go, iOS, JavaScript, Kubernetes, Linux, macOS, Machine Learning, Wolfram Mathematica, 
+Nginx, NodeJS, OpenCL, OpenGL, Python, Shell Scripting, RabbitMQ, RDBMS, R/RStudio,
+ReactJS/React Native, REST APIs, SQL, WebGL
+\section{OTHER}
+3D Printing, CAD, Circuit Design,
+Hardware Design, Italian, Soldering, Spanish
+ 
+\end{resume}
+\end{document}
