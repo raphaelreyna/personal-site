@@ -12,79 +12,60 @@
 
 \address{Email: raphaelreyna@protonmail.com \\
   Phone: (626) 384-1342 \\
-  Site: www.raphaelreyna.works}
+  Site: rphlrn.com}
                            
                         
 \begin{resume} 
-\section{Open Source Projects}
+\section{Open Source Work}
+{\bf Telepresence (Contributor)}\newline
+Telepresence is a CNCF project that allows developers to "insert" their local workstation into a Kubernetes cluster to shorten the dev loop.
+During my time on this project I mostly worked on integrating the CLI tool with the cloud, observability and service discovery, license enforcement, delivery, automating testing, feature planning, meeting with clients and code reviews.\newline
+URL: telepresence.io
+
 {\bf EinsteinPy (Contributor)}\newline
 EinsteinPy is an open source pure Python package dedicated to problems arising in General Relativity and gravitational physics.
-My contributions to the project were to increase performance by using my background in math to exploit symmetries in some of the underlying matrix and tensor computations.
+My contributions to the project were to increase performance by using my background in math to exploit symmetries in some of the underlying matrix and tensor computations.\newline
 URL: github.com/einsteinpy/einsteinpy
-\begin{multicols}{2}
-\begin{itemize}
-\item {\bf Languages Used: }\newline Python, Wolfram Language
-  \columnbreak
-\item {\bf Technologies Used: }\newline Wolfram Mathematica, Group Theory, Tensor Algebra
-\end{itemize}
-\end{multicols}
 
 {\bf Oneshot (Author)}\newline
-A first-come-first-served, single-fire HTTP server. Easily transfer files to and from your computer and any browser.
-Features include: HTTPS (including self-signing certificates), authentication, archiving, mDNS, CGI environment with defaultable headers, serve from stdin, upload to stdout and more.
-URL: github.com/raphaelreyna/oneshot
-\begin{multicols}{2}
-\begin{itemize}
-\item {\bf Languages Used: }\newline Go, HTML
-  \columnbreak
-\item {\bf Technologies Used: }\newline HTTP, SSL/TLS, mDNS, CGI (RFC 3875)
-\end{itemize}
-\end{multicols}
+A feature-rich, first-come-first-served, single-fire HTTP server. Oneshot is a CLI networking tool that be can used for file transfers to and from any browser. It also supports rich, machine-readable output, making it easy to integrate into CI/CD pipelines.
+Features include: multiple methods of NAT traversal (STUN + TURN via WebRTC and port mappings via UPnP-IGD, authentication, archiving, mDNS, CGI environment with defaultable headers, machine-readable output serve from stdin, upload to stdout and more.\newline
+URL: github.com/oneshot-uno/oneshot
 
 {\bf LaTTe (Author)}\newline
 LaTTe provides programmatic document generation as an HTTP service.
 Users submit a templated LaTeX, following Go's templating format, and a JSON object and any resources they may need (such as images) to produce
-a PDF document. Supports registering template and resource files to reduce traffic, CORS, caching, and has a flexbile persistence model.
+a PDF document. Supports registering template and resource files to reduce traffic, CORS, caching, and has a flexible persistence model.\newline
 URL: github.com/raphaelreyna/latte
-\begin{multicols}{2}
-\begin{itemize}
-\item {\bf Languages Used: }\newline Go, Shell, TeX
-  \columnbreak
-\item {\bf Technologies Used: }\newline Docker, Bash, pdfTeX/pdfLaTeX
-\end{itemize}
-\end{multicols}
-
-{\bf Subseries Web App (Author)}\newline
-A full-stack web app for computing massively parallel evaluations of complex
-valued functions in real time using WebGL, written as a part of my Masters thesis on subseries of holomorphic functions.
-Front end is written in Javascript and JSX using ReactJS.
-Backend is written in python and is running as a Docker container on Heroku.
-Can also be used to make really pretty fractal animations.
-URL: github.com/raphaelreyna/subseries-webgl
-\begin{multicols}{2}
-\begin{itemize}
-\item {\bf Languages Used: }\newline HTML, Javascript, JSX, CSS, Python, YAML
-  \columnbreak
-\item {\bf Technologies Used: }\newline WebGL, ReactJS,
-  Docker, Sympy, Flask, Materialize CSS
-\end{itemize}
-\end{multicols}
 
 \section{RELEVANT WORK EXPERIENCE}
+{\bf Ambassador Labs }\newline
+{\it Senior Systems Engineer}\newline
+{\bf April 2022 - January 2023}
+At Ambassador Labs, I contributed to the open-source CNCF project Telepresence, focusing on integrating the CLI tool with our cloud service. This involved enhancing observability, service discovery, and license enforcement for an optimized user experience. I also played a role in driving the architectural change to integrate all of Ambassador Labs' products in terms of observability and cloud capabilities, streamlining the user experience across the product suite. In addition to these responsibilities, I participated in improving software delivery, automating testing, planning new features, engaging in client meetings, and conducting code reviews.
+
+{\bf RateMyProfessors.com - Cheddar Inc. }\newline
+{\it Backend Engineer }\newline
+{\bf April 2021 - April 2022}\newline
+As a Backend Engineer at RateMyProfessors.com, a legacy website with over 23 years of history, I tackled the challenges of a mature, high-traffic codebase, navigating its seasonal spikes in usage. Originally built on Groovy on Grails, I played a pivotal role in modernizing the platform by decomposing the monolithic architecture into highly efficient microservices. This entailed utilizing GraphQL to establish seamless communication with the frontend, enhancing the overall performance and maintainability of the site.
+
+{\bf Self Employed}\newline
+{\it Software Auditor and Engineer}\newline
+{\bf June 2020 - February 2022}\newline
+During my time as a Software Auditor and Engineer in the dental industry, I audited the development of a cloud-based patient management software, ensuring strict adherence to the technical specification document for my client throughout the development process.
+In addition to my auditing responsibilities, I contributed to the creation of a platform for dentists to buy, sell, and trade equipment and services. 
+
 {\bf The Recovery Watchdog}\newline
 {\it Lead Software Engineer}\newline
-{\bf September 2019 - Present}\newline
-At The Recovery Watchdog, I designed and developed the backend to the their patient management service.
-The backend follows a microservice architecture, with all microservices written in Go and include tests.
-I also managed, and was heavily involved with the development of the frontend mobile app which was written using React Native by 4 people including myself.
-Additionally I wrote the Kubernetes manifests for both the development and testing deployments, which I also handled both on prem and on AWS respectively.
+{\bf September 2019 - March 2020}\newline
+At The Recovery Watchdog, I took the lead in designing the architecture and developing the backend for their patient management service, implementing a microservice approach. Each microservice was written in Go and accompanied by comprehensive test suites. Additionally, I led a remote team of 4 to create the frontend using React Native.
+
+Beyond my development responsibilities, I managed the deployment onto Kubernetes, setting up and configuring the clusters for both development and testing environments. This included handling the integration of on-premises and AWS infrastructure to ensure consistent and reliable performance across platforms.
 
 {\bf Cal Poly Pomona, Pomona, CA}\newline
 {\it Mathematics Instructor}\newline
-{\bf 2015 - Present}\newline
-Responsibilities included designing a course schedule, complete with lecture and
-evaluation material; as well as leading the class through the material and
-regularly conducting evaluations of student performance.\newline
+{\bf September 2015 - June 2019}\newline
+As a Mathematics Instructor, my responsibilities included creating a well-structured course schedule, complete with lecture materials and assessment tools. I guided the class through the subject matter, fostering an environment that encouraged understanding and engagement. To monitor student performance, I regularly conducted evaluations, providing feedback and support to promote academic growth throughout the course.\newline
 \ \newline
 Courses taught include: Calculus I, Calculus II, Trigonometry, College Algebra,
 Remedial Mathematics.
@@ -95,13 +76,7 @@ B.S. Applied Mathematics and Statistics with a minor in Physics, 2015 \newline
 M.S. Pure Mathematics, expected summer 2019
 
 \section{RELEVANT SKILLS}
-AWS, C/C++, Data Science, Docker, Flask, 
-Git/Github, Go, iOS, JavaScript, Kubernetes, Linux, macOS, Machine Learning, Wolfram Mathematica, 
-Nginx, NodeJS, OpenCL, OpenGL, Python, Shell Scripting, RabbitMQ, RDBMS, R/RStudio,
-ReactJS/React Native, REST APIs, SQL, WebGL
-\section{OTHER}
-3D Printing, CAD, Circuit Design,
-Hardware Design, Italian, Soldering, Spanish
+Distributed systems, networking, software architecture, Kubernetes, Linux, Go, C, Javascript/Typescript
  
 \end{resume}
 \end{document}
