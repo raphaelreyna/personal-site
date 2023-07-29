@@ -17,7 +17,7 @@ jobs:
 
       - name: Get version and image
         run: |
-          export VERSION=$(git tag)
+          export VERSION=$(git describe --tags --abbrev=0)
           echo VERSION=$VERSION >> $GITHUB_ENV
           echo IMAGE=${{ vars.DOCKER_HUB_USER }}/personal-site:$VERSION >> $GITHUB_ENV
 
