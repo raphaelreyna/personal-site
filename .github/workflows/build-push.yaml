@@ -1,0 +1,43 @@
+name: "Build, Push and Deploy"
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOYMENT_PATH: deploy/manifests/deployment.yaml
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          branch: master
+
+      - name: Get version and image
+        run: |
+          export VERSION=$(git tag)
+          echo VERSION=$VERSION >> $GITHUB_ENV
+          echo IMAGE=${{ vars.DOCKER_HUB_USER }}/personal-site:$VERSION >> $GITHUB_ENV
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ vars.DOCKER_HUB_USER }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: ${{ env.IMAGE }}
+
+      - name: Update deployment image
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq e ".spec.template.spec.containers[0].image = \"${{ env.IMAGE }}\"" -i deploy/manifests/deployment.yaml
+      
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
