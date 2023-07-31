@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: api.rreyna.dev
+  - host: api.rphlrn.com
     http:
       paths:
       - backend:
@@ -25,5 +25,5 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - api.rreyna.dev
-    secretName: api-rreyna-dev-tls
+    - api.rphlrn.com
+    secretName: api-rphlrn-com-tls
