@@ -1,0 +1,34 @@
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  name: subseries-frontend
+  namespace: personal-site
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: rreyna.dev
+    http:
+      paths:
+      - backend:
+          service:
+            name: subseries-frontend
+            port:
+              number: 80
+        path: /Subseries-WebGL(/|$)(.*)
+        pathType: Prefix
+  - host: www.rreyna.dev
+    http:
+      paths:
+      - backend:
+          service:
+            name: subseries-frontend
+            port:
+              number: 80
+        path: /Subseries-WebGL(/|$)(.*)
+        pathType: Prefix
+  tls:
+  - hosts:
+    - rreyna.dev
+    - www.rreyna.dev
+    secretName: rreyna-dev-tls

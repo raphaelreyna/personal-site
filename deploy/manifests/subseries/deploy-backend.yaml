@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subseries-backend
+  namespace: personal-site
+spec:
+  selector:
+    matchLabels:
+      app: subseries-backend
+  template:
+    metadata:
+      labels:
+        app: subseries-backend
+    spec:
+      containers:
+      - image: raphaelreyna/sympy-graph:latest
+        imagePullPolicy: IfNotPresent
+        name: subseries-site-backend
+        ports:
+        - containerPort: 27182
+          name: http
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 250m
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi

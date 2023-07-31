@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/cors-allow-headers: Authorization, origin, accept
+    nginx.ingress.kubernetes.io/cors-allow-methods: PUT, GET, POST, OPTIONS
+    nginx.ingress.kubernetes.io/cors-allow-origin: '*'
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  name: latte-demo-frontend
+  namespace: personal-site
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: rreyna.dev
+    http:
+      paths:
+      - backend:
+          service:
+            name: latte-demo-frontend
+            port:
+              number: 80
+        path: /latte-demo(/|$)(.*)
+        pathType: Prefix
+  - host: www.rreyna.dev
+    http:
+      paths:
+      - backend:
+          service:
+            name: latte-demo-frontend
+            port:
+              number: 80
+        path: /latte-demo(/|$)(.*)
+        pathType: Prefix
+  tls:
+  - hosts:
+    - rreyna.dev
+    - www.rreyna.dev
+    secretName: rreyna-dev-tls

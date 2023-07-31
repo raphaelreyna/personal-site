@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: latte-demo-backend
+  namespace: personal-site
+spec:
+  selector:
+    matchLabels:
+      app: latte-demo-backend
+  template:
+    metadata:
+      labels:
+        app: latte-demo-backend
+    spec:
+      containers:
+      - image: raphaelreyna/latte:v0.11.1-full
+        imagePullPolicy: IfNotPresent
+        name: latte-demo-backend
+        ports:
+        - containerPort: 27182
+          name: http
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 250m
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
