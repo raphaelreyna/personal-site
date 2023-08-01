@@ -15,6 +15,12 @@ jobs:
           fetch-depth: 0
           branch: master
 
+      - name: Compile resume
+        uses: xu-cheng/latex-action@v2
+        with:
+          working_directory: resume
+          root_file: raphael_reyna_short.tex
+
       - name: Get version and image
         run: |
           export VERSION=$(git describe --tags --abbrev=0)
