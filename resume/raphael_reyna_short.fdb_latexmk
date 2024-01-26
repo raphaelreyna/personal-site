@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1690926050 "raphael_reyna_short.tex" "raphael_reyna_short.pdf" "raphael_reyna_short" 1690926050 0
+["pdflatex"] 1706249007.98541 "raphael_reyna_short.tex" "raphael_reyna_short.pdf" "raphael_reyna_short" 1706249008.31019 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -11,15 +11,15 @@
   "/opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls" 1686341992 20144 fbcf51733730d8f1a62143512ff5b1fe ""
   "/opt/texlive/texdir/texmf-dist/tex/latex/base/size10.clo" 1686341992 8448 74078c4a887f2cdcd57c3ec111622740 ""
-  "/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1681935207 29940 9473d58112bc8a88f5505b823a053dde ""
+  "/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1699826044 29988 6d57d2b884f7464419678df319af86d2 ""
   "/opt/texlive/texdir/texmf-dist/tex/latex/tools/multicol.sty" 1686341992 32515 51caec75eda9c8890135f12f1a4eddc3 ""
-  "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1681165822 40967 d940221f8762fd5848760382d97d1226 ""
-  "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1690851940 4647393 b88ad427fc48c5185072131b65e5bc94 ""
-  "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1690852146 8172501 9c6faa52458ca665687c90950080bb13 ""
-  "/opt/texlive/texdir/texmf.cnf" 1690851932 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "raphael_reyna_short.aux" 1690926050 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "raphael_reyna_short.tex" 1690926049 7107 159010cb6604a5fc9dfd38dffd79431f ""
-  "res.cls" 1690926049 25066 8ec1e15ab4c53340bc92863668c7be49 ""
+  "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1697057529 41009 84b61f42d16d06bedb915f57aa2374cf ""
+  "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1704071591 4745183 7293bc117fc1af48071457757238cbd7 ""
+  "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1704071662 8217930 bef22874806c86fab8be35cf658acb83 ""
+  "/opt/texlive/texdir/texmf.cnf" 1704071584 555 bd60ff59e4d560b42d96b004436f91d3 ""
+  "raphael_reyna_short.aux" 1706249007.53952 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "raphael_reyna_short.tex" 1706249007.53952 7107 159010cb6604a5fc9dfd38dffd79431f ""
+  "res.cls" 1706249007.53952 25066 8ec1e15ab4c53340bc92863668c7be49 ""
   (generated)
   "raphael_reyna_short.aux"
   "raphael_reyna_short.log"
