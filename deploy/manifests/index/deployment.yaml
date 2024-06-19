@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: personal-site
-          image: raphaelreyna/personal-site:v0.5.0
+          image: raphaelreyna/personal-site:v0.6.0
           imagePullPolicy: Always
           ports:
             - containerPort: 80
